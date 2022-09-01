@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SwipeyWeatherApp/app/src/main/res/drawable/ic_baseline_cloud_24.xml" value="0.2025" />
         <entry key="..\:/SwipeyWeatherApp/app/src/main/res/layout/activity_error.xml" value="0.1" />
         <entry key="..\:/SwipeyWeatherApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/SwipeyWeatherApp/app/src/main/res/layout/activity_weather.xml" value="0.536" />
+        <entry key="..\:/SwipeyWeatherApp/app/src/main/res/layout/activity_weather.xml" value="0.264" />
       </map>
     </option>
   </component>

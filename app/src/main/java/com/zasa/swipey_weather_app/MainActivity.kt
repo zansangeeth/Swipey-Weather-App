@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
                             val weatherIntent = Intent(this@MainActivity, WeatherActivity::class.java)
                             weatherIntent.putExtra("location", body!!.location.name)
                             weatherIntent.putExtra("tempInCelsius", body.current.temp_c.toString())
+                            weatherIntent.putExtra("conditionImage", body.current.condition.icon)
                             startActivity(weatherIntent)
                         }
 
