@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SwipeyWeatherApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2025" />
         <entry key="..\:/SwipeyWeatherApp/app/src/main/res/drawable/air.xml" value="0.2025" />
         <entry key="..\:/SwipeyWeatherApp/app/src/main/res/drawable/clear_day.xml" value="0.2025" />
         <entry key="..\:/SwipeyWeatherApp/app/src/main/res/drawable/humidity_mid.xml" value="0.2025" />

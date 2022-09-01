@@ -40,12 +40,13 @@ class MainActivity : AppCompatActivity() {
                         call: Call<WeatherResults>,
                         response: Response<WeatherResults>
                     ) {
-                        if (!response.isSuccessful){
+                        if (!response.isSuccessful) {
                             startActivity(Intent(this@MainActivity, ErrorActivity::class.java))
-                        }else{
+                        } else {
                             val body = response.body()
                             Log.i(TAG, "Response : $body")
-                            val weatherIntent = Intent(this@MainActivity, WeatherActivity::class.java)
+                            val weatherIntent =
+                                Intent(this@MainActivity, WeatherActivity::class.java)
                             weatherIntent.putExtra("location", body!!.location.name)
                             weatherIntent.putExtra("country", body.location.country)
                             weatherIntent.putExtra("tempInCelsius", body.current.temp_c.toString())

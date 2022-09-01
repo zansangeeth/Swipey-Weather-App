@@ -12,8 +12,8 @@ interface WeatherService {
 
     @GET("current.json")
     fun getCurrentWeather(
-        @Query("key") key : String,
-        @Query("q") q : String
-    ) : Call<WeatherResults>
+        @Query("key") key: String,
+        @Query("q") q: String
+    ): Call<WeatherResults>
 
 }

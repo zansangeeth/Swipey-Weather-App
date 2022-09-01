@@ -2,8 +2,6 @@ package com.zasa.swipey_weather_app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.net.toUri
-import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_weather.*
 
 class WeatherActivity : AppCompatActivity() {
@@ -11,7 +9,7 @@ class WeatherActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_weather)
 
-        val bundle : Bundle? = intent.extras
+        val bundle: Bundle? = intent.extras
 
         val location = bundle!!.getString("location")
         val country = bundle.getString("country")
@@ -24,7 +22,7 @@ class WeatherActivity : AppCompatActivity() {
         tvCountryName.text = country
         tvTemperature.text = "$tempInCelsius °C"
         tvCondition.text = currentCondition
-        tvWind.text = windMph
+        tvWind.text = "$windMph Mph"
         tvHumidity.text = humidity
 
     }
