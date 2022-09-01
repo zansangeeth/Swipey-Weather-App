@@ -50,8 +50,8 @@ class MainActivity : AppCompatActivity() {
                             weatherIntent.putExtra("country", body.location.country)
                             weatherIntent.putExtra("tempInCelsius", body.current.temp_c.toString())
                             weatherIntent.putExtra("currentCondition", body.current.condition.text)
-                            weatherIntent.putExtra("windMph", body.current.wind_mph)
-                            weatherIntent.putExtra("humidity", body.current.humidity)
+                            weatherIntent.putExtra("windMph", body.current.wind_mph.toString())
+                            weatherIntent.putExtra("humidity", body.current.humidity.toString())
 
                             startActivity(weatherIntent)
                         }

@@ -20,7 +20,7 @@ class WeatherActivity : AppCompatActivity() {
         val windMph = bundle.getString("windMph")
         val humidity = bundle.getString("humidity")
 
-        tvLocationName.text = location
+        tvLocationName.text = "$location,  "
         tvCountryName.text = country
         tvTemperature.text = "$tempInCelsius °C"
         tvCondition.text = currentCondition
