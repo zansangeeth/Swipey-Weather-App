@@ -47,8 +47,12 @@ class MainActivity : AppCompatActivity() {
                             Log.i(TAG, "Response : $body")
                             val weatherIntent = Intent(this@MainActivity, WeatherActivity::class.java)
                             weatherIntent.putExtra("location", body!!.location.name)
+                            weatherIntent.putExtra("country", body.location.country)
                             weatherIntent.putExtra("tempInCelsius", body.current.temp_c.toString())
-                            weatherIntent.putExtra("conditionImage", body.current.condition.icon)
+                            weatherIntent.putExtra("currentCondition", body.current.condition.text)
+                            weatherIntent.putExtra("windMph", body.current.wind_mph)
+                            weatherIntent.putExtra("humidity", body.current.humidity)
+
                             startActivity(weatherIntent)
                         }
 

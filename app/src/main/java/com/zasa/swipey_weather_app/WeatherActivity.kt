@@ -14,11 +14,18 @@ class WeatherActivity : AppCompatActivity() {
         val bundle : Bundle? = intent.extras
 
         val location = bundle!!.getString("location")
+        val country = bundle.getString("country")
         val tempInCelsius = bundle.getString("tempInCelsius")
-        val conditionImage = bundle.getString("conditionImage")
-//        tvLocation.text = location
-//        tvTempInCelcius.text = tempInCelsius
-//        Glide.with(this).load(conditionImage).into(ivConditionImage)
+        val currentCondition = bundle.getString("currentCondition")
+        val windMph = bundle.getString("windMph")
+        val humidity = bundle.getString("humidity")
+
+        tvLocationName.text = location
+        tvCountryName.text = country
+        tvTemperature.text = "$tempInCelsius °C"
+        tvCondition.text = currentCondition
+        tvWind.text = windMph
+        tvHumidity.text = humidity
 
     }
 }
