@@ -1,4 +1,4 @@
-package com.zasa.swipey_weather_app
+package com.zasa.swipey_weather_app.response
 
 data class Current(
     val cloud: Int,
